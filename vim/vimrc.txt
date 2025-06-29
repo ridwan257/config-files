@@ -46,7 +46,7 @@ nnoremap <Space> :noh<CR>
 nnoremap <C-s> :w<CR>       
 inoremap <C-s> <Esc>:w<CR>
 inoremap jk <Esc>
-vnoremap y "+y
+nnoremap y "+y
 nnoremap Y "+Y
 nnoremap p "+p
 nnoremap P "+P
