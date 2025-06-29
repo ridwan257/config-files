@@ -1,0 +1,52 @@
+" BASIC settings
+set nocompatible
+syntax on
+filetype plugin indent on
+
+" UI settings
+set number
+set relativenumber
+set showcmd
+set laststatus=2
+set ruler
+set title
+set termguicolors
+set background=dark
+
+" CURSOR LOOK
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
+
+" TABS & INDENTATION
+set tabstop=4                 " Number of spaces for a tab
+set shiftwidth=4              " Spaces per indent level
+set expandtab                 " Use spaces instead of tabs
+set smartindent               " Auto indent new lines
+
+" SEARCH
+set ignorecase                " Case insensitive search
+set smartcase                 " Unless capital letter used
+set incsearch                 " Show matches as you type
+set hlsearch                  " Highlight matches
+
+" SCROLLING
+set scrolloff=8               " Keep 8 lines above/below
+set sidescrolloff=8           " Same for side scrolling
+
+" BACKSPACE FIX
+set backspace=indent,eol,start
+" MOUSE
+set mouse=a
+set clipboard=unnamedplus
+set nowrap
+
+" KEY MAPPINGS
+nnoremap <Space> :noh<CR>     
+nnoremap <C-s> :w<CR>       
+inoremap <C-s> <Esc>:w<CR>
+inoremap jk <Esc>
+vnoremap y "+y
+nnoremap Y "+Y
+nnoremap p "+p
+nnoremap P "+P
