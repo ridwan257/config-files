@@ -21,7 +21,7 @@ set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
 " TABS & INDENTATION
 set tabstop=4                 " Number of spaces for a tab
 set shiftwidth=4              " Spaces per indent level
-set expandtab                 " Use spaces instead of tabs
+" set expandtab                 " Use spaces instead of tabs
 set smartindent               " Auto indent new lines
 
 " SEARCH
@@ -47,6 +47,6 @@ nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>
 inoremap jk <Esc>
 vnoremap y "+y
-nnoremap Y "+Y
+vnoremap Y "+Y
 nnoremap p "+p
 nnoremap P "+P
